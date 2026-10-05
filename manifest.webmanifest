@@ -1,0 +1,19 @@
+{
+  "name": "Throne — Poop & Gut Tracker",
+  "short_name": "Throne",
+  "description": "A private poop and gut-health tracker. All data stays on your device.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#1b1512",
+  "theme_color": "#1b1512",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='96' fill='%231b1512'/%3E%3Ctext x='256' y='368' font-size='320' text-anchor='middle'%3E%F0%9F%92%A9%3C/text%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

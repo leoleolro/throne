@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Throne — a private poop and gut-health tracker. Bristol scale, trends, and plain-English insights. All data stays on your device.">
+<meta name="theme-color" content="#1b1512">
+<title>Throne · Poop &amp; Gut Tracker</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='52' font-size='52'>%F0%9F%92%A9</text></svg>">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <h1 class="brand"><span class="brand-mark" aria-hidden="true">💩</span> Throne</h1>
+      <div class="topbar-actions">
+        <span class="streak" id="streakChip" hidden></span>
+        <button class="icon-btn" id="themeBtn" type="button" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section id="view-log"      class="view" hidden></section>
+    <section id="view-history"  class="view" hidden></section>
+    <section id="view-trends"   class="view" hidden></section>
+    <section id="view-insights" class="view" hidden></section>
+    <section id="view-eat"      class="view" hidden></section>
+    <section id="view-settings" class="view" hidden></section>
+  </main>
+
+  <nav class="tabbar" aria-label="Sections">
+    <div class="wrap tabbar-inner">
+      <button class="tab" data-view="log"      type="button"><span class="tab-ico" aria-hidden="true">＋</span>Log</button>
+      <button class="tab" data-view="history"  type="button"><span class="tab-ico" aria-hidden="true">☰</span>History</button>
+      <button class="tab" data-view="trends"   type="button"><span class="tab-ico" aria-hidden="true">📈</span>Trends</button>
+      <button class="tab" data-view="insights" type="button"><span class="tab-ico" aria-hidden="true">🩺</span>Insights</button>
+      <button class="tab" data-view="eat"      type="button"><span class="tab-ico" aria-hidden="true">🥦</span>Eat</button>
+      <button class="tab" data-view="settings" type="button"><span class="tab-ico" aria-hidden="true">⚙</span>Data</button>
+    </div>
+  </nav>
+
+  <dialog id="entryDialog" class="dialog" aria-labelledby="dialogTitle"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
